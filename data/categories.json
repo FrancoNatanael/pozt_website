@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "category": "Innovative Technologies"
+    },
+    {
+        "id": 2,
+        "category": "Software Development"
+    },
+    {
+        "id": 3,
+        "category": "AI and Machine Learning"
+    },
+    {
+        "id": 4,
+        "category": "Cybersecurity"
+    },
+    {
+        "id": 5,
+        "category": "Blockchain and Cryptocurrencies"
+    },
+    {
+        "id": 6,
+        "category": "Augmented and Virtual Reality"
+    },
+    {
+        "id": 7,
+        "category": "IoT (Internet of Things)"
+    },
+    {
+        "id": 8,
+        "category": "Cloud Computing"
+    },
+    {
+        "id": 9,
+        "category": "Data Science and Big Data"
+    },
+    {
+        "id": 10,
+        "category": "Tech Startups and Entrepreneurship"
+    },
+    {
+        "id": 11,
+        "category": "Programming Languages"
+    },
+    {
+        "id": 12,
+        "category": "Tech Gadgets and Hardware"
+    },
+    {
+        "id": 13,
+        "category": "Tech Trends and News"
+    },
+    {
+        "id": 14,
+        "category": "Mobile App Development"
+    },
+    {
+        "id": 15,
+        "category": "Green IT and Sustainability"
+    }
+]
