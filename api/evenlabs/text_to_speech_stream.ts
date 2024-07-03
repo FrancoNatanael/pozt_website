@@ -14,10 +14,11 @@ const client = new ElevenLabsClient({
 });
 
 export const createAudioStreamFromText = async (
-  text: string
+  text: string,
+  speaker: string
 ): Promise<Buffer> => {
   const audioStream = await client.generate({
-    voice: "Rachel",
+    voice: speaker,
     model_id: "eleven_turbo_v2",
     text,
   });

@@ -6,19 +6,24 @@ import Link from "next/link";
 export default function PrincipalContent(){
     return <section className="flex justify-between p-5 mt-6" style={{height: '80vh'}}>
         <section className="w-[50%] px-2 py-16">
-            <h1 className="text-4xl">Read interesting pozts <span>{'{ posts :> }'}</span></h1>
-            <h3 className="mt-2 text-lg">create, share and translate all our ideas.</h3>
+            <h1 className="text-4xl font-medium">Read interesting pozts <span>{'{ posts :> }'}</span></h1>
+            <h3 className="mt-2 text-xl">create, share and translate all our ideas.</h3>
             <p className="text-sm italic">pozt.</p>
 
-            <div className="mt-5 bg-[#FBB44A] rounded-lg w-fit">
+            <div className="mt-5 bg-[#FBB44A] rounded-lg w-fit tracking-wider transition-all duration-200">
                 <Link href={'/create-post'}>
-                    <Button label="I'm insipired" icon={() => <i className="pi pi-plus" style={{fontSize: '13px', marginRight: '8px'}}></i>} iconPos="left" className="text-lg p-3"/>
+                    <Button 
+                    label="I'm insipired" 
+                    icon={() => <i className="pi pi-plus" 
+                    style={{fontSize: '13px', marginRight: '8px'}}></i>} 
+                    iconPos="left" 
+                    className="text-lg p-3 opacity-[0.9]"/>
                 </Link>
             </div>
         </section>
 
         <section className="">
-            <Image src={img} alt={"Hero image"} fill={false}/>
+            <Image src={img} alt={"Hero image"} fill={false} className="min-w-[635px]"/>
         </section>
     </section>
 }

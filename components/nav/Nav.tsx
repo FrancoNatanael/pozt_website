@@ -11,8 +11,8 @@ export default function Nav(){
             <ul>
                 <Link href={'/post/all'} className="mr-7">read pozts</Link>
                 {/* <Link href={'/'} className="mr-7">pozters</Link> */}
-                <Link href={'/'} className="mr-7">categories</Link>
-                <Link href={'/create-post'} className="mr-7 py-1 px-3 rounded-lg w-fit border-2 border-[#FBB44A]">+ create</Link>
+                <Link href={'/categories/all'} className="mr-7">categories</Link>
+                <Link href={'/create-post'} className="mr-7 py-1 px-3 rounded-lg w-fit border-2 border-[#FBB44A] tracking-wider">+ create</Link>
             </ul>
         </nav>
 
