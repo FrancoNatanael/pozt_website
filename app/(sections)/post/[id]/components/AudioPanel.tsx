@@ -15,7 +15,7 @@ export default function AudioPanel({pozt} : { pozt: Pozt}){
     const [loadAudio, setLoadAudio] = useState(0)
     const [speakers, setSpeakers] = useState([])
     const {audioUrl, loading} = useFetchAudio(text, selectedSpeaker!.name, loadAudio)
-    const [selectedTextOption, setSelectedTextOption] = useState("text")
+    const [selectedTextOption, setSelectedTextOption] = useState("title")
 
     const setAudioRef = () => {
         audioRef.current!.src = audioUrl

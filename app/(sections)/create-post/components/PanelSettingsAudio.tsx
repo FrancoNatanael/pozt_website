@@ -10,7 +10,12 @@ export default function PanelSettingsAudio({ letRead, letTranslate,setLetRead, s
                 <AccordionTab header={'Enable AI audio options'} headerClassName='p-4 bg-[#eceef1] opacity-[0.9] rounded-lg'>
                     <div className="pb-5 px-6 rounded-lg">
                         <div className="flex align-items-center my-5">
-                            <Checkbox inputId="let_read" name="ai_options" value="let_read" onChange={setLetRead} checked={letRead} />
+                            <Checkbox 
+                            inputId="let_read" 
+                            name="ai_options" 
+                            value="let_read" 
+                            onChange={setLetRead} 
+                            checked={letRead}/>
                         <label htmlFor="let_read" className="ml-2">Let read</label>
                         </div>
                         

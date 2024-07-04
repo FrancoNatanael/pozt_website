@@ -1,4 +1,4 @@
-import { Pozt } from '../../types/pozt.types';
+import { Pozt } from '@/types/pozt.types';
 
 export default function PoztCard({ pozt } : {pozt: Pozt}){
     return <div className='w-[70%] text-left mr-3'>

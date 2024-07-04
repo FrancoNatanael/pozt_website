@@ -1,24 +1,27 @@
-import { useState } from "react";
-import data from "@/data/posts.json";
+import { useEffect, useState } from "react";
+import pozts from "@/data/posts.json";
 
-function useCreatePozt(title: string, shortDescription: string, pozter: string, text: string, letRead: boolean, letTranslate: boolean){
+function useCreatePozt(newPozt: any, create: number){
     const [created, setCreated] = useState(false)
 
-    const fs = require('fs')
-    fs.writeFileSync('file.json', JSON.stringify(
-        {
-            id: data.length + 1,
-            title: title,
-            author: pozter,
-            short_description: shortDescription,
-            category_id: 1, // set category id chosen in form
-            text: text,
-            let_translate: letTranslate,
-            let_read: letRead
+    const createPozt = () => {
+        const obj = {
+            id: pozts.length + 1,
+            title: newPozt.title,
+            author: newPozt.pozter,
+            short_description: newPozt.shortDescription,
+            category_id: 1,
+            text: newPozt.text,
+            let_translate: newPozt.letTranslate,
+            let_read: newPozt.letRead
         }
-    ));
+        const objJson = JSON.stringify(obj)
+        setCreated(true)
+    }
 
-    setCreated(true)
+    useEffect(() => {
+        createPozt()
+    }, [create])
 
     return created
 }
