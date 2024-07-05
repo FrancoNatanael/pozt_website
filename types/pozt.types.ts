@@ -8,3 +8,10 @@ export interface Pozt {
     let_translate: boolean;
     let_read: boolean;
 }
+
+export interface FilterOptions {
+    all: boolean;
+    selectedCategory: {id: number; category: string; description: string;} | null;
+    textToFilter: string;
+    saved: boolean;
+}
